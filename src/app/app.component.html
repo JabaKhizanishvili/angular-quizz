@@ -1,0 +1,17 @@
+<div class="container-fluid d-flex justify-content-center align-items-center" [ngStyle]="{'height':'100vh'}">
+  <app-welcome color="yellow" *ngIf="show" (btnClick)="jaba()"></app-welcome>
+
+  <div class="container bg-dark text-white p-3" id="quizz" *ngIf="questions">
+    <div class="container" id="finish" *ngIf="!finish">
+      <h2>{{data[currentQuestion].question}}</h2>
+      <ul>
+        <li *ngFor="let a of data[currentQuestion].answer" #value (click)="check()">{{a.option}}</li>
+      </ul>
+    </div>
+    <div id="finishimg">
+      <!-- <img src="../assets/pic.jpg" alt="asd" width="100">
+      <p>ნამდვილი სტუკელი</p> -->
+    </div>
+    <button class="btn btn-success" (click)="back()" *ngIf="finish">თავიდან</button>
+  </div>
+</div>

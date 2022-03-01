@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Georgian:wght@600&family=Rowdies:wght@400;700&display=swap');
+
+* {
+  font-family: 'Noto Sans Georgian', sans-serif;
+  font-family: 'Rowdies', cursive;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+
+
+  li {
+    // list-style: none;
+
+    &:hover {
+      background-color: rgb(63, 180, 27);
+    }
+  }
+}
+
+#quizz {
+  max-width: 600px;
+  max-height: 300px;
+  font-family: 'Noto Sans Georgian', sans-serif;
+}
